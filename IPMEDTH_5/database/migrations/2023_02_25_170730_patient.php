@@ -10,15 +10,20 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up(): void
-    {
-        //
-    }
+        {
+            Schema::create('patient', function (Blueprint $table) {
+                $table->id();
+                $table->string('voornaam');
+                $table->string('achternaam');
+                $table->string('adres');
+            });
+        }
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('patient');
     }
 };
