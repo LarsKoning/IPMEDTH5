@@ -13,9 +13,13 @@ return new class extends Migration
         {
             Schema::create('inname', function (Blueprint $table) {
                 $table->id();
-                $table->foreignid('patientID')->constrained('patient');
-                $table->foreignid('medicijnID')->constrained('medicijnen');
-                $table->dateTime('date');
+                $table->unsignedBigInteger('patientID');
+                $table->unsignedBigInteger('medicijnID');
+                $table->string('whichDay');
+                $table->time('timeOpen');
+                
+                $table->foreign('patientID')->references('patientID')->on('patient');
+                $table->foreign('medicijnID')->references('medicijnID')->on('medicijnen');
             });
         }
 
@@ -24,6 +28,10 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::table('inname', function (Blueprint $table) {
+            $table->dropForeign('inname_patientID_foreign');
+            $table->dropForeign('inname_medicijnID_foreign');
+        });
         Schema::dropIfExists('inname');
     }
 };
