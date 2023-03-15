@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use DB;
 
 class innameTableSeeder extends Seeder
 {
@@ -22,7 +23,7 @@ class innameTableSeeder extends Seeder
             [
                 'patientID'=>'2',
                 'medicijnID'=>'3',
-                'whichDay'=>din,
+                'whichDay'=>'din',
                 'timeOpen'=>'15.30',
             ],
             [
