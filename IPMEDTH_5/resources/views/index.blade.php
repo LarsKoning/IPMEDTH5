@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Caroussel</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
                 </figure>
             </li>
             <li class="navitem">
-                <a href="https://easytoys.com" class="button button1">Log in</a>
+                <a href="https://www.w3schools.com" class="button button1">Log in</a>
             </li>
         </ul>
     </nav>
@@ -24,8 +24,7 @@
     <article class="samenvatting">
         <article class="card card1">
             <figure class="figuur">
-                <img src="{{ asset('img/app.png') }}" alt="Een foto van een telefoon" class="foto">
-                {{-- <img src="img/app.png" alt="Een foto van een telefoon" class="foto"> --}}
+                <img src="img/app.png" alt="Een foto van een telefoon" class="foto">
             </figure>
             <header>
                 <h2>De app</h2>
@@ -39,8 +38,7 @@
         </article>
         <article class="card card2">
             <figure class="figuur">
-                <img src="{{ asset('img/caroussel.png') }}" alt="Een foto van caroussel" class="foto">
-                {{-- <img src="img/caroussel.png" alt="Een foto van caroussel" class="foto"> --}}
+                <img src="img/caroussel.png" alt="Een foto van caroussel" class="foto">
             </figure>
             <header>
                 <h2>De carrousel</h2>
