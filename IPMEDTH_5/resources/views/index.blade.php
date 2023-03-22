@@ -10,5 +10,7 @@
 <body>
     <p>halllloooooooooooooooooo bitches</p>
      <p>{{$patient->voornaam}} {{$patient->achternaam}}</p> 
+     <a href="/welcome">link</a>
+     
 </body>
 </html>
