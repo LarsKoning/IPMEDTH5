@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
     <title>Caroussel</title>
 </head>
 <body>
@@ -51,6 +51,6 @@
             </section>
         </article>
     </article>
-    <script src="Index.js"></script>
+    <script src="{{ asset('/js/index.js') }}"></script>
 </body>
 </html>

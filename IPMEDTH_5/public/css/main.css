@@ -63,7 +63,7 @@ body{
     margin-top: -300px;
 }
 
-.card{
+.sectie1{
     background: white;
     height: 750px;
     font-size: 20px;
@@ -74,13 +74,43 @@ body{
     overflow: hidden;
 }
 
-.card1{
+.sectie2{
+    background: white;
+    height: 100px;
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+    font-family: Medicijn;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sectie3{
+    background: white;
+    height: 550px;
+    font-size: 30px;
+    width: 90%;
+    text-align: center;
+    font-family: Medicijn;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.app{
     margin-top: 300px;
 }
 
-.card2{
+.caroussel{
     margin-top: 300px;
 }
+
+.timer{
+    margin-top: 300px;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+
 .figuur{
     width: 100%;
     height: 74%;
@@ -88,6 +118,15 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
+    background-size: cover;
+    overflow: hidden;
+}
+.figuurdag{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     background-size: cover;
     overflow: hidden;
 }
@@ -114,18 +153,7 @@ h2{
 p{
     padding-left: 7px;
 }
-.deadpool1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60vw;
-    background-color: white;
-    font-family: Deadpool3;
-    color: #FF6666;
-    border-radius: 5px;
-    margin: 50px auto;
-    padding: 5px;
-}
+
 header{
     color: #FF6666;
 }
@@ -153,6 +181,23 @@ header{
     background-color: #FF6666;
 }
 
+.home{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65vw;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: -300px;
+}
+
+.tekst2{
+    width: 400px;
+    margin: 0 auto;
+}
 
 /* media css */
 @media only screen and (max-width: 1300px){
@@ -236,6 +281,14 @@ header{
     }
     .trailer{
         margin-bottom: 500px;
+    }
+
+    .sectie3{
+        font-size: 20px;
+    }
+    .tekst2{
+        width: auto;
+        margin: auto;
     }
 }
 @media only screen and (max-width: 700px){
@@ -332,3 +385,4 @@ header{
         width: 100%;
     }
 }
+

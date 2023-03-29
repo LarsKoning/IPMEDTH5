@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
     <title>Caroussel</title>
 </head>
 <body>
@@ -12,23 +12,19 @@
         <ul class="navigatienav">
             <li class="navitem">
                 <figure class="figuurtje">
-                    <img src="img/logo.png" alt="Een foto van Deadpool2" class="fototje">
+                    <img src="img/logo.png" alt="Logo Pill&Co" class="fototje">
                 </figure>
             </li>
             <li class="navitem">
-                <a href="https://easytoys.com" class="button button1">Log in</a>
-            </li>
-            <li class="navitem">
-                <a href="{{ route('dashboard') }}">Login</a>
+                <a href="{{ route('dashboard') }}" class="button button1">Log in</a>
             </li>
         </ul>
     </nav>
     
     <article class="samenvatting">
-        <article class="card card1">
+        <article class="sectie1 app">
             <figure class="figuur">
                 <img src="{{ asset('img/app.png') }}" alt="Een foto van een telefoon" class="foto">
-                {{-- <img src="img/app.png" alt="Een foto van een telefoon" class="foto"> --}}
             </figure>
             <header>
                 <h2>De app</h2>
@@ -40,10 +36,9 @@
                 </p>
             </section>
         </article>
-        <article class="card card2">
+        <article class="sectie1 caroussel">
             <figure class="figuur">
                 <img src="{{ asset('img/caroussel.png') }}" alt="Een foto van caroussel" class="foto">
-                {{-- <img src="img/caroussel.png" alt="Een foto van caroussel" class="foto"> --}}
             </figure>
             <header>
                 <h2>De carrousel</h2>
@@ -56,7 +51,6 @@
             </section>
         </article>
     </article>
-    <script src="Index.js"></script>
+    <script src="{{ asset('/js/index.js') }}"></script>
 </body>
 </html>
-
