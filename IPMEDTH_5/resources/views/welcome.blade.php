@@ -19,7 +19,7 @@
                 <a href="https://easytoys.com" class="button button1">Log in</a>
             </li>
             <li class="navitem">
-                <a href='{{ route('dashboard') }}'>Login</a>
+                <a href="{{ route('dashboard') }}">Login</a>
             </li>
         </ul>
     </nav>

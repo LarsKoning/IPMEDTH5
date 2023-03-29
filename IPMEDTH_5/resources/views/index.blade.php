@@ -22,7 +22,7 @@
     </nav>
     
     <article class="samenvatting">
-        <article class="card card1">
+        <article class="sectie card1">
             <figure class="figuur">
                 <img src="img/app.png" alt="Een foto van een telefoon" class="foto">
             </figure>
@@ -36,7 +36,7 @@
                 </p>
             </section>
         </article>
-        <article class="card card2">
+        <article class="sectie card2">
             <figure class="figuur">
                 <img src="img/caroussel.png" alt="Een foto van caroussel" class="foto">
             </figure>
