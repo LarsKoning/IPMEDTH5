@@ -1,55 +1,52 @@
 /* alle pagina's */
-body{
+body {
     margin: 0;
     background-color: white;
 }
 
 /* fonts */
-@font-face { 
-    font-family: Medicijn2; 
-    src: url('Kameron-regular.ttf'); 
-} 
-@font-face { 
-    font-family: Medicijn; 
-    src: url('Kameron-Bold.ttf'); 
-} 
+@font-face {
+    font-family: "Medicijn2";
+    src: url("/fonts/Kameron-regular.ttf");
+}
+@font-face {
+    font-family: "Medicijn";
+    src: url("/fonts/Kameron-Bold.ttf");
+}
 
 /* de navigatiebalk */
-.navigatienav{
+.navigatienav {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     margin: 0 auto;
     list-style-type: none;
     background-color: white;
     height: auto;
     padding: 0;
 }
-.navigatie{
+.navigatie {
     text-align: center;
     margin-bottom: 20px;
-    border-bottom: 4px solid #FF6666;
+    border-bottom: 4px solid #ff6666;
     width: 100%;
 }
-.navitem{
+.navitem {
     display: flex;
     flex-direction: row;
-    justify-content:left;
+    justify-content: left;
     margin-right: 50px;
 }
-.linktext{
+.linktext {
     font-size: 170%;
     font-family: Deadpool2;
     color: white;
 }
-.navlink{
+.navlink {
     text-decoration: none;
 }
 
-
-
-
-.samenvatting{
+.samenvatting {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     flex-direction: row;
@@ -63,7 +60,7 @@ body{
     margin-top: -300px;
 }
 
-.sectie1{
+.sectie1 {
     background: white;
     height: 750px;
     font-size: 20px;
@@ -74,7 +71,7 @@ body{
     overflow: hidden;
 }
 
-.sectie2{
+.sectie2 {
     background: white;
     height: 100px;
     font-size: 20px;
@@ -85,7 +82,7 @@ body{
     overflow: hidden;
 }
 
-.sectie3{
+.sectie3 {
     background: white;
     height: 550px;
     font-size: 30px;
@@ -96,22 +93,21 @@ body{
     overflow: hidden;
 }
 
-.app{
+.app {
     margin-top: 300px;
 }
 
-.caroussel{
+.caroussel {
     margin-top: 300px;
 }
 
-.timer{
+.timer {
     margin-top: 300px;
     font-weight: bold;
     font-size: 70px;
 }
 
-
-.figuur{
+.figuur {
     width: 100%;
     height: 74%;
     display: flex;
@@ -121,7 +117,7 @@ body{
     background-size: cover;
     overflow: hidden;
 }
-.figuurdag{
+.figuurdag {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -131,31 +127,30 @@ body{
     overflow: hidden;
 }
 
-.figuurtje{
+.figuurtje {
     margin: 28px 40px;
 }
 
-
-.foto{
+.foto {
     width: 100%;
 }
 
-.webshopbody{
+.webshopbody {
     height: 1450px;
 }
 
 /* algemene h2's */
-h2{
+h2 {
     padding-left: 7px;
     margin-bottom: 0;
 }
 /* algemene p's */
-p{
+p {
     padding-left: 7px;
 }
 
-header{
-    color: #FF6666;
+header {
+    color: #ff6666;
 }
 /* button */
 .button {
@@ -175,13 +170,13 @@ header{
     font-size: 24px;
     margin: 41px 40px;
     cursor: pointer;
-  }
-  
-  .button1 {
-    background-color: #FF6666;
 }
 
-.home{
+.button1 {
+    background-color: #ff6666;
+}
+
+.home {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     flex-direction: row;
@@ -194,195 +189,191 @@ header{
     margin-top: -300px;
 }
 
-.tekst2{
+.tekst2 {
     width: 400px;
     margin: 0 auto;
 }
 
 /* media css */
-@media only screen and (max-width: 1300px){
-    .card{
+@media only screen and (max-width: 1300px) {
+    .card {
         height: 550px;
     }
-    .slider{
+    .slider {
         width: 100%;
     }
-    .navigatie-auto{
+    .navigatie-auto {
         width: 100%;
     }
-    .navigatie-manual{
+    .navigatie-manual {
         width: 100%;
     }
-    .figuur{
+    .figuur {
         height: 60%;
     }
 }
-@media only screen and (max-width: 1200px){
-    .card{
+@media only screen and (max-width: 1200px) {
+    .card {
         font-size: 20px;
         width: 120%;
     }
 }
 
-
-@media only screen and (max-width: 1050px){
-    .card{
+@media only screen and (max-width: 1050px) {
+    .card {
         width: 160%;
         height: 850px;
         font-size: 16px;
     }
-    .figuur{
-        height: 50%; 
+    .figuur {
+        height: 50%;
     }
-    .fototje{
+    .fototje {
         height: 100%;
         width: 100%;
     }
-    .button{
+    .button {
         height: 40%;
         width: 100%;
         font-size: 16px;
-        margin: 30px 40px
+        margin: 30px 40px;
     }
-    .navigatienav{
+    .navigatienav {
         height: 100px;
     }
-    .acteurs{
+    .acteurs {
         margin-bottom: 620px;
     }
-    .main-acteurs{
+    .main-acteurs {
         margin-bottom: 1050px;
     }
-
 }
-@media only screen and (max-width: 975px){
-    .card{
+@media only screen and (max-width: 975px) {
+    .card {
         height: 430px;
     }
-    .acteurfiguur{
+    .acteurfiguur {
         height: 40%;
     }
-    .main-acteurs{
+    .main-acteurs {
         margin-bottom: 970px;
     }
 }
-@media only screen and (max-width: 800px){
-    .card{
+@media only screen and (max-width: 800px) {
+    .card {
         height: 450px;
     }
-    .acteurfiguur{
+    .acteurfiguur {
         height: 30%;
     }
-    .deadpool1{
+    .deadpool1 {
         font-size: 9px;
     }
-    .main-acteurs{
+    .main-acteurs {
         margin-bottom: 1050px;
     }
-    .trailer{
+    .trailer {
         margin-bottom: 500px;
     }
 
-    .sectie3{
+    .sectie3 {
         font-size: 20px;
     }
-    .tekst2{
+    .tekst2 {
         width: auto;
         margin: auto;
     }
 }
-@media only screen and (max-width: 700px){
-    .acteurs{
+@media only screen and (max-width: 700px) {
+    .acteurs {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         margin-bottom: 2000px;
     }
-    .acteurs2{
+    .acteurs2 {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
-    .samenvatting{
+    .samenvatting {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
-    .webshop{
+    .webshop {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
-    .webshopbody{
+    .webshopbody {
         height: 1900px;
     }
 
-    .foto{
+    .foto {
         object-fit: cover;
         height: 100%;
         width: 60%;
     }
-    .figuur{
+    .figuur {
         height: 50%;
     }
-    .card1{
+    .card1 {
         margin-top: 250px;
     }
-    .card2{
+    .card2 {
         margin-top: 50px;
     }
-    .card{
+    .card {
         width: 90%;
     }
-    .samenvatting{
+    .samenvatting {
         gap: 1px;
         margin-top: -230px;
     }
 
-    .main-acteurs{
+    .main-acteurs {
         margin-bottom: 2820px;
     }
-    .trailer{
+    .trailer {
         width: 100%;
     }
 }
 
-@media only screen and (max-width: 600px){
-    .button{
+@media only screen and (max-width: 600px) {
+    .button {
         font-size: 12px;
     }
-    .navitem{
+    .navitem {
         margin-right: 0px;
     }
-    .foto{
+    .foto {
         object-fit: cover;
         height: 100%;
         width: 80%;
     }
 }
 
-
-@media only screen and (max-width: 475px){
-    .acteurs{
+@media only screen and (max-width: 475px) {
+    .acteurs {
         margin-bottom: 2500px;
     }
-    .acteurfoto{
+    .acteurfoto {
         object-fit: cover;
         height: 100%;
     }
-    .acteurfiguur{
+    .acteurfiguur {
         height: 50%;
     }
-    .card{
+    .card {
         height: 500px;
     }
-    .deadpool1{
+    .deadpool1 {
         font-size: 8px;
     }
-    .main-acteurs{
+    .main-acteurs {
         margin-bottom: 3460px;
     }
-    .button{
+    .button {
         font-size: 13px;
         padding-top: 10px;
         padding-bottom: 0;
         padding-left: 26px;
         padding-right: 26px;
     }
-    .foto{
+    .foto {
         width: 100%;
     }
 }
-
