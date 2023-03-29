@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\http\Controllers\AppController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +13,6 @@ use App\http\Controllers\AppController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-
-Route::get('/', [AppController::class, 'index']);
-Route::get('/welcome', [AppController::class, 'index']);
-
-
-
 
 Route::get('/', function () {
     return view('welcome');
