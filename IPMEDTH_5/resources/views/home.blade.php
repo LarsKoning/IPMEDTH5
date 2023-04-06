@@ -35,7 +35,7 @@
                 <p class="tekst2" id="tekstdag">
                     Het is nu avond,
                     volgende pil moet je
-                    nemen na 8:00
+                    nemen na <p class="tijd" id="tijd">8:00</p>
                 </p>
             </section>
         </article>
