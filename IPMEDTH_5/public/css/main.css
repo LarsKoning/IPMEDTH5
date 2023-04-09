@@ -4,6 +4,10 @@ body {
     background-color: white;
 }
 
+.dash{
+    background-color: grey;
+}
+
 /* fonts */
 @font-face {
     font-family: "Medicijn2";

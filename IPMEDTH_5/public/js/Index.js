@@ -4,7 +4,11 @@ function displayTime(){
     var minuten = dateTime.getMinutes();
 
     document.getElementById('uren').innerHTML = uren;
-    document.getElementById('minuten').innerHTML = minuten;
+    if (minuten < 10){
+        document.getElementById('minuten').innerHTML = '0' + minuten;
+    } else{
+        document.getElementById('minuten').innerHTML = minuten;
+    }
 
     if (uren > 6){
         document.getElementById("figuurdag").src="img/Ochtend.png"

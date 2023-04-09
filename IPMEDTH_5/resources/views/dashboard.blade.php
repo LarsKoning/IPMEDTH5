@@ -1,23 +1,13 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Medicijninfo') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
-        </div>
-    </div>
-    <body>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
+    <title>Caroussel</title>
+</head>
+    <body class="dash">
     <article class="home">
         <article class="sectie2 timer">
             <span id="uren">00</span>
@@ -35,11 +25,11 @@
                 <p class="tekst2" id="tekstdag">
                     Het is nu avond,
                     volgende pil moet je
-                    nemen na <p class="tijd" id="tijd">8:00</p>
+                    nemen na 8:00
                 </p>
             </section>
         </article>
     </article>
-    <script src="Index.js"></script>
+    <script src="{{ asset('/js/index.js') }}"></script>
     </body>
 </x-app-layout>
