@@ -12,7 +12,7 @@
         <ul class="navigatienav">
             <li class="navitem">
                 <figure class="figuurtje">
-                    <img src="img/logo.png" alt="Een foto van Deadpool2" class="fototje">
+                    <img src="img/logo.png" alt="Een logo van pill&co" class="fototje">
                 </figure>
             </li>
             <li class="navitem">
