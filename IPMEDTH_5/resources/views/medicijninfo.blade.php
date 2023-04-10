@@ -8,17 +8,14 @@
     <title>Caroussel</title>
 </head>
     <body class="dash">
-        <article class="home">
-            <p>hier komt medicijninfo</P>
-        </article>
+        <p class="pilneem">Dit zijn de medicijnen die u neemt:</p>
         <article class="meds">
         @foreach ($medicijnen as $medicijn)
             <article class="medInfo">
-                <h1>{{$medicijn->naam}}</h1>
-                <p>{{$medicijn->dosis}}</p>
+                <h1 class="mednaam">{{$medicijn->naam}}</h1>
+                <p class="meddosis">{{$medicijn->dosis}}</p>
             </article>
         @endforeach
         </article>
-        <script src="{{ asset('/js/index.js') }}"></script>
     </body>
 </x-app-layout>

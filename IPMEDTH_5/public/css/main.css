@@ -106,7 +106,7 @@ body {
 }
 
 .timer {
-    margin-top: 300px;
+    margin-top: 350px;
     font-weight: bold;
     font-size: 70px;
 }
@@ -207,14 +207,35 @@ header {
     justify-content: center;
 }
 
+.pilneem{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5%;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    color: #000000;
+    font-size: 30px;
+}
+
 .medInfo {
-    background-color: rgb(170, 201, 201);
+    background-color: #ff6666;
     width: 30vw;
     height: auto;
-    color: rgb(36, 36, 107);
     margin: 5%;
     text-align: center;
     border-radius: 5px;
+    font-size: 25px;
+}
+
+.mednaam{
+    margin: 20px;
+    color: #ffffff;
+}
+
+.meddosis{
+    margin: 20px;
+    color: #ffffff;
 }
 
 /* media css */
@@ -264,39 +285,15 @@ header {
     .navigatienav {
         height: 100px;
     }
-    .acteurs {
-        margin-bottom: 620px;
-    }
-    .main-acteurs {
-        margin-bottom: 1050px;
-    }
 }
 @media only screen and (max-width: 975px) {
     .card {
         height: 430px;
     }
-    .acteurfiguur {
-        height: 40%;
-    }
-    .main-acteurs {
-        margin-bottom: 970px;
-    }
 }
 @media only screen and (max-width: 800px) {
     .card {
         height: 450px;
-    }
-    .acteurfiguur {
-        height: 30%;
-    }
-    .deadpool1 {
-        font-size: 9px;
-    }
-    .main-acteurs {
-        margin-bottom: 1050px;
-    }
-    .trailer {
-        margin-bottom: 500px;
     }
 
     .sectie3 {
@@ -306,23 +303,21 @@ header {
         width: auto;
         margin: auto;
     }
+    .pilneem{
+        font-size: 20px;
+    }
+    .medInfo {
+        font-size: 15px;
+    }
+    
+    .timer {
+        font-size: 50px;
+    }
 }
 @media only screen and (max-width: 700px) {
-    .acteurs {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        margin-bottom: 2000px;
-    }
-    .acteurs2 {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
+
     .samenvatting {
         grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-    .webshop {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-    .webshopbody {
-        height: 1900px;
     }
 
     .foto {
@@ -346,13 +341,6 @@ header {
         gap: 1px;
         margin-top: -230px;
     }
-
-    .main-acteurs {
-        margin-bottom: 2820px;
-    }
-    .trailer {
-        width: 100%;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -370,25 +358,11 @@ header {
 }
 
 @media only screen and (max-width: 475px) {
-    .acteurs {
-        margin-bottom: 2500px;
-    }
-    .acteurfoto {
-        object-fit: cover;
-        height: 100%;
-    }
-    .acteurfiguur {
-        height: 50%;
-    }
+    
     .card {
         height: 500px;
     }
-    .deadpool1 {
-        font-size: 8px;
-    }
-    .main-acteurs {
-        margin-bottom: 3460px;
-    }
+    
     .button {
         font-size: 13px;
         padding-top: 10px;
