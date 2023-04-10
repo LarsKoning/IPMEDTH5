@@ -14,7 +14,7 @@ return new class extends Migration
             Schema::create('medicijnen', function (Blueprint $table) {
                 $table->id('medicijnID');
                 $table->string('naam');
-                $table->integer('dosis (mg)');
+                $table->integer('dosis');
             });
         }
 

@@ -16,31 +16,31 @@ class medicijnTableSeeder extends Seeder
         DB::table('medicijnen')->insert(array(
             [
             'naam' => 'Diclofenac',
-            'dosis (mg)' => 50,
+            'dosis' => 50,
             ],
             [
             'naam' => 'Amixicilline',
-            'dosis (mg)' => 500,
+            'dosis' => 500,
             ],
             [
             'naam' => 'Omeprazol',
-            'dosis (mg)' => 10,
+            'dosis' => 10,
             ],
             [
             'naam' => 'Doxycycline',
-            'dosis (mg)' => 100,
+            'dosis' => 100,
             ],
             [
             'naam' => 'Ibuprofen',
-            'dosis (mg)' => 400,
+            'dosis' => 400,
             ],
             [
             'naam' => 'Metoprolol',
-            'dosis (mg)' => 50,
+            'dosis' => 50,
             ],
             [
             'naam' => 'Salbutamol',
-            'dosis (mg)' => 300,
+            'dosis' => 300,
             ]
         ));
     }

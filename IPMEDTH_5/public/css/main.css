@@ -4,7 +4,7 @@ body {
     background-color: white;
 }
 
-.dash{
+.dash {
     background-color: grey;
 }
 
@@ -196,6 +196,25 @@ header {
 .tekst2 {
     width: 400px;
     margin: 0 auto;
+}
+
+/* Medicijn info */
+.meds {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.medInfo {
+    background-color: rgb(170, 201, 201);
+    width: 30vw;
+    height: auto;
+    color: rgb(36, 36, 107);
+    margin: 5%;
+    text-align: center;
+    border-radius: 5px;
 }
 
 /* media css */
