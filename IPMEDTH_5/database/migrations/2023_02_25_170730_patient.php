@@ -16,6 +16,8 @@ return new class extends Migration
                 $table->string('voornaam');
                 $table->string('achternaam');
                 $table->string('adres');
+                $table->integer('LED_state');
+                $table->integer('app_state');
             });
         }
 

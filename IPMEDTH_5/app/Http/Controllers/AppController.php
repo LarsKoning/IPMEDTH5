@@ -14,4 +14,8 @@ class AppController extends Controller
         $patient = patient::first();
         return view('index')->with('patient', $patient);
     }
+
+    public function reset(){
+        
+    }
 }
