@@ -27,4 +27,7 @@ class AppController extends Controller
             'user' => $user,
         ]);
     }
+    public function reset(){
+        
+    }
 }
