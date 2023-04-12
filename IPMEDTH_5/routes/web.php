@@ -15,13 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/reset', [AppController::class, 'reset']);
+
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [AppController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 
 // Route::get('/medicijninfo', function () {
 //     return view('medicijninfo');

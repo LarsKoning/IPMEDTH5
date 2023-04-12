@@ -15,11 +15,6 @@ class userTableSeeder extends Seeder
     {
         DB::table('users')->insert(array(
             [
-            'name' => 'sander',
-            'email' => 's1122866@student.hsleiden.nl',
-            'password' => bcrypt('smelly'),
-            ],
-            [
             'name' => 'admin',
             'email' => 'admin@admin.com',
             'password' => bcrypt('admin123'),
@@ -40,5 +35,13 @@ class userTableSeeder extends Seeder
             'password' => bcrypt('quinsen'),
             ],
         ));
+        DB::table('users')->insert(
+            [
+                'isPatient' => 1,
+                'name' => 'sander',
+                'email' => 's1122866@student.hsleiden.nl',
+                'password' => bcrypt('smelly'),
+                ]
+            );
     }
 }

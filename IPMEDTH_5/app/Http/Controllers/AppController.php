@@ -11,10 +11,15 @@ use Auth;
 
 class AppController extends Controller
 {
-    function index(){
-        $patient = patient::first();
-        return view('index')->with('patient', $patient);
+    function dashboard(){
+        $user = Auth::user();
+        $patient = patient::where('patientID', $user->isPatient)->first();
+        return view('dashboard', [
+            'patient' => $patient,
+            ]
+        );
     }
+
 
     public function showMeds(){
         $user = Auth::user();
@@ -28,6 +33,17 @@ class AppController extends Controller
         ]);
     }
     public function reset(){
+
+        $user = Auth::user();
+        $state = patient::where('patientID', $user->isPatient)->first();
+
+        if ($state->app_state != 0) {
+            $state->app_state = 0;
+        } else{
+            $state->app_state = 1;
+        }
         
+        $state->save();
+        return redirect('/dashboard');
     }
 }

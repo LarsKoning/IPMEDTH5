@@ -29,6 +29,10 @@
                 </p>
             </section>
         </article>
+        @if($patient != null)
+        <a href="reset">DIT IS EEN OVERVAL RESET</a>
+        <p> app_state is {{$patient->app_state}}</p>
+        @endif
     </article>
     <script src="{{ asset('/js/index.js') }}"></script>
     </body>
