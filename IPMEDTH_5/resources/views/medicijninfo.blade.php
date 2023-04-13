@@ -13,7 +13,7 @@
         @foreach ($medicijnen as $medicijn)
             <article class="medInfo">
                 <h1 class="mednaam">{{$medicijn->naam}}</h1>
-                <p class="meddosis">{{$medicijn->dosis}}</p>
+                <p class="meddosis">{{$medicijn->dosis}} mg</p>
             </article>
         @endforeach
         </article>
