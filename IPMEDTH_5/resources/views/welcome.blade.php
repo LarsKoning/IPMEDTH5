@@ -16,7 +16,7 @@
                 </figure>
             </li>
             <li class="navitem">
-                <a href="{{ route('register') }}" class="button button1">Log in</a>
+                <a href="{{ route('dashboard') }}" class="button button1">Log in</a>
             </li>
         </ul>
     </nav>
