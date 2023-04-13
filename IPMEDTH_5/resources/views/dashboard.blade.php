@@ -30,6 +30,7 @@
             </section>
         </article>
         @if($patient != null)
+        <a href="stap_verder">STAP VERDER</a>
         <a href="reset">DIT IS EEN OVERVAL RESET</a>
         <p> app_state is {{$patient->app_state}}</p>
         @endif

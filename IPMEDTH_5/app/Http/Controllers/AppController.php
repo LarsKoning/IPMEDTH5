@@ -40,10 +40,33 @@ class AppController extends Controller
         if ($state->app_state != 0) {
             $state->app_state = 0;
         } else{
-            $state->app_state = 1;
+            $state->app_state = 21;
         }
         
         $state->save();
         return redirect('/dashboard');
+    }
+
+    public function stap_verder(){
+        $user = Auth::user();
+        $state = patient::where('patientID', $user->isPatient)->first();
+
+        if ($state->app_state < 21) {
+            $state->app_state = $state->app_state + 1;
+        } else {
+            $state->app_state = 0;
+        }
+        
+        
+
+        $state->save();
+        return redirect('/dashboard');
+    }
+
+    public function get_app_state(){
+        $user = Auth::user();
+        $state = patient::where('patientID', $user->isPatient)->first();
+        
+        return $state->app_state;
     }
 }

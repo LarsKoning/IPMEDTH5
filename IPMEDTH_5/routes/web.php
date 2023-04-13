@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/reset', [AppController::class, 'reset']);
+Route::get('/stap_verder', [AppController::class, 'stap_verder']);
+Route::get('/get_app_state', [AppController::class, 'get_app_state']);
 
 
 Route::get('/', function () {
