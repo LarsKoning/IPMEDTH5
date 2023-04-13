@@ -27,7 +27,7 @@ Route::get('/dashboard', function () {
 //     return view('medicijninfo');
 // })->middleware(['auth', 'verified'])->name('medicijninfo');
 
-Route::get('/medicijninfo', [AppController::class, 'showMeds'])->middleware(['auth', 'verified'])->name('medicijninfo');
+Route::get('/medicijninfo', [AppController::class, 'showMeds'])->name('medicijninfo');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
