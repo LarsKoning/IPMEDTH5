@@ -2,6 +2,7 @@ function displayTime(){
     var dateTime = new Date();
     var uren = dateTime.getHours();
     var minuten = dateTime.getMinutes();
+    var seconden = dateTime.getSeconds();
 
     document.getElementById('uren').innerHTML = uren;
     if (minuten < 10){
@@ -25,6 +26,20 @@ function displayTime(){
         document.getElementById("tekstdag").innerHTML = "Het is nu Avond, volgende pil moet je nemen na 6:00";
         document.getElementById("kopdag").innerHTML = "Avond";
     }
+    if (uren == 6 && seconden == 1){
+        var url = "stap_verder";
+        location.href = url;
+    }
+
+    if (uren == 12 && seconden == 1){
+        var url = "stap_verder";
+        location.href = url;
+    }
+
+    if (uren == 18 && seconden == 1){
+        var url = "stap_verder";
+        location.href = url;
+    }
 }
 
-setInterval(displayTime, 10);
+setInterval(displayTime, 3000);

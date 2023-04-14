@@ -76,7 +76,7 @@ body {
 }
 
 .sectie2 {
-    background: white;
+    background: rgb(243 244 246 / var(--tw-bg-opacity) blue);
     height: 100px;
     font-size: 20px;
     width: 90%;
@@ -87,7 +87,7 @@ body {
 }
 
 .sectie3 {
-    background: white;
+    background: rgb(243 244 246 / var(--tw-bg-opacity) blue);
     height: 550px;
     font-size: 30px;
     width: 90%;
@@ -236,6 +236,37 @@ header {
 .meddosis{
     margin: 20px;
     color: #ffffff;
+}
+
+.resetButton {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 15rem;
+    border-radius: 10px;
+    background-color: #ff6666;
+}
+.resetButton2 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 15rem;
+    border-radius: 10px;
+    background-color: #ff6666;
+}
+
+.buttony {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
 }
 
 /* media css */

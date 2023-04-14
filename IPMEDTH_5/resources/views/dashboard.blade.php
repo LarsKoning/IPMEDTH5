@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="/js/Index.js"></script>
     <title>Caroussel</title>
 </head>
     <body class="dash">
@@ -29,11 +30,17 @@
                 </p>
             </section>
         </article>
-        @if($patient != null)
-        <a href="reset">DIT IS EEN OVERVAL RESET</a>
-        <p> app_state is {{$patient->app_state}}</p>
-        @endif
+        <section class="buttony">
+            <section class="resetButton2">
+                <a href="stap_verder">STAP VERDER</a>
+            </section>
+            <section class="resetButton">
+                @if($patient != null)
+                <a href="reset">Reset</a>
+                <!-- <p> app_state is {{$patient->app_state}}</p> -->
+                @endif
+            </section>
+        </section>
     </article>
-    <script src="{{ asset('/js/index.js') }}"></script>
     </body>
 </x-app-layout>
