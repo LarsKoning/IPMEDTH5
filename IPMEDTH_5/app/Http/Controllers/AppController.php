@@ -36,15 +36,11 @@ class AppController extends Controller
         $user = Auth::user();
         $state = patient::where('patientID', 1)->first();
         $state->controller = "1";
-        // if ($state->app_state != 0) {
-           
-        // } else{
-        //     $state->app_state = 20;
-        // }
         
         $state->save();
         return redirect('/dashboard');
     }
+
     public function stap_verder(){
         $user = Auth::user();
         $state = patient::where('patientID', 1)->first();
@@ -55,12 +51,9 @@ class AppController extends Controller
         } else {
             $state->app_state = 0;
         }
-        
-        
 
         $state->save();
         return redirect('/dashboard');
-
     }
 
     public function get_app_state(){
